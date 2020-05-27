@@ -3,6 +3,7 @@
 	<br>
 	<br>
 </h1>
+
 # Askdata Examples
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AskdataInc/askdata-examples/blob/master/notebooks/Askdata%20-%20Quickstart.ipynb)
 This repository contains examples of [Askdata](https://www.askdata.com/) usage in serving different types of data.
