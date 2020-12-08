@@ -19,7 +19,7 @@ pip install -r requirements.txt
 Lets handle our authenticaton
 ```python
 import askdata as ad
-from askdata.askdata_client import Askdata, Agent
+from askdata import Askdata
 askdata = Askdata()
 ```
 Once your insert your account and password you're all set
@@ -28,15 +28,15 @@ Once your insert your account and password you're all set
 # Load the list of the agents connected to your account as a pandas dataframe
 get_agents_df = askdata.agents_dataframe()
 #get one agent
-agent = Agent(askdata, 'Sales Demo')
+agent = askdata.agent("sales_demo")
 # Simple query
 df = agent.ask('give me sales by countries')
 df
 ```
-## Create a new Askbase and Create a dataset
+## Create a new Workspace (agent) and Create a dataset Starting from a Dataframe
 ```python
 # Load the list of the agents connected to your account as a pandas dataframe
-my_second_agent.save_to_dataset(frame=df, dataset_name='Web Sources')
+agent.create_dataset(frame=df, dataset_name='Web Sources')
 ```
 ## Askdata Demo
 Check the following tutorial, to learn more about Askdata end-to-end. 
