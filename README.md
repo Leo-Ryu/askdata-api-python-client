@@ -18,7 +18,6 @@ pip install -r requirements.txt
 ## Authentication
 Lets handle our authenticaton
 ```python
-import askdata as ad
 from askdata import Askdata
 askdata = Askdata()
 ```
